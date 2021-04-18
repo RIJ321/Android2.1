@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Android2.1</string>
+    <string name="welcome">Welcome to Relaxify</string>
+    <string name="sn_long">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus euismod lacus, pharetra dui.</string>
+    <string name="sign_up">Sign up</string>
+    <string name="signing">Sign in</string>
+    <string name="Hello">Hello,Welcome!</string>
+    <string name="et_emal">Phone number or email</string>
+    <string name="password">Password</string>
+    <string name="bn_sign_in">Sign in</string>
+    <string name="tt_or_sign">or Sign in with</string>
+    
 </resources>

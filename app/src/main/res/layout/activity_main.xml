@@ -4,23 +4,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/backgr"
-    >
+    android:padding="20dp"
+    tools:context=".MainActivity">
+<ImageView
+        android:id="@+id/male_skin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
 
-    <RelativeLayout
-        android:layout_width="380dp"
-        android:layout_height="294dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="399dp">
+        android:background="@drawable/ic_illustration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            
 
-            tools:ignore="MissingConstraints" />
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sfpro_medium"
+        android:text="@string/welcome"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/male_skin" />
+
+
+    <TextView
+        android:id="@+id/long_tt"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/sn_long"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/sfpro_regular"
+        app:layout_constraintTop_toBottomOf="@id/welcome"
+        android:layout_marginTop="8dp"/>
+    
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bn_sig_up"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        app:cornerRadius="16dp"
+        android:fontFamily="@font/sfpro_regular"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/backgr_btn_corners"
+        app:layout_constraintTop_toBottomOf="@id/long_tt"
+        android:layout_marginTop="70dp"
+        />
+
+    <TextView
+        android:id="@+id/bn_signing"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="@string/signing"
+        android:textAllCaps="false"
+        android:fontFamily="@font/sfpro_medium"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/light_blue"
+        android:textColorHint="@color/white"
+        android:foregroundGravity="center"
+        app:layout_constraintTop_toBottomOf="@id/bn_sig_up"
+        android:layout_marginTop="15dp"
+        />
+
+
+    
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
